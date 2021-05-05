@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="@string/app_name"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/topBar">
+
+
+    <TextView
+        android:id="@+id/tvQesDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demo"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:background="@drawable/ed_text_background"
+        android:textColor="@color/colorPrimary"
+        style="@style/TextAppearance.AppCompat.Title">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQesDes"
+        android:layout_marginTop="8dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="previous"
+            android:layout_weight=".5"
+            android:layout_marginEnd="8dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_primary"
+            android:layout_marginRight="8dp"></Button>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_weight=".5"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_primary"></Button>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

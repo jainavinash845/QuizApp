@@ -1,0 +1,52 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppThemeMain" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="ShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="android:background">#000000</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">4dp</item>
+        <item name="cornerSizeBottomRight">4dp</item>
+        <item name="android:toDegrees">35</item>
+    </style>
+    <style name="ShapeAppearanceTwo" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">cut</item>
+
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">4dp</item>
+        <item name="cornerSizeTopRight">34dp</item>
+        <item name="cornerSizeBottomRight">4dp</item>
+        <item name="android:toDegrees">20</item>
+    </style>
+                                                                                                                      
+    <style name="Some.Theme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="materialButtonStyle">@style/MyApp.Button</item>
+        <item name="background">@color/colorAccent</item>
+    </style>
+    <style name="MyApp.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.MaterialButton</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.MaterialButton" parent="">
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">4dp</item>
+        <item name="cornerSizeBottomRight">4dp</item>
+        <item name="android:topLeftRadius">45dp</item>
+        <item name="android:pivotX">45%</item>
+    </style>
+</resources>

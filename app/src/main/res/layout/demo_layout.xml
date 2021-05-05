@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/textLoginIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:theme="@style/ShapeAppearanceTwo"
+        android:layout_marginTop="50dp"
+        android:text="Total"
+        android:textSize="20dp"
+        style="@style/Some.Theme"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_primary"
+        android:layout_marginStart="16dp">
+
+</Button>
+
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_primary"
+        android:theme="@style/ShapeAppearance"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:textSize="20dp"
+        android:layout_marginStart="-25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead">
+
+    </TextView>
+
+</LinearLayout>

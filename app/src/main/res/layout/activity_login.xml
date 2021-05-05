@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/ivloginBottom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Now"
+        android:textColor="@color/colorprimaryText"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorprimaryText"
+            android:text="Please Login to continue using app"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:background="@drawable/ed_text_background"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password"
+            android:background="@drawable/ed_text_background"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:inputType="textPassword">
+
+        </EditText>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorprimaryButton"
+            android:background="@drawable/btn_primary"
+            android:text="LognIn"></Button>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+           android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+
+            android:textColor="@color/colorprimaryText"
+        android:text="Don't have an account ? Sign Up"
+        style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivloginBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_wave"
+        />
+
+</RelativeLayout>
